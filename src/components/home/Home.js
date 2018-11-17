@@ -55,7 +55,11 @@ class Home extends Component {
 				<div className="form">
 					<img src={LogoHome} alt="Reactociné" />
 					<h1>Reactociné</h1>
-					<form>
+					<form
+						onSubmit={e => {
+							e.preventDefault();
+						}}
+					>
 						<div className="search">
 							<input
 								name="search"
