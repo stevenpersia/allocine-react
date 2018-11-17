@@ -9,7 +9,7 @@ Used The Movie Database API : themoviedb.org
 ---
 
 ## Demo
-Check demo : https://allocine-steven.herokuapp.com/
+Check demo : https://confident-wiles-803463.netlify.com/
 
 ---
 
