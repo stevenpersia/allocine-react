@@ -1,0 +1,10 @@
+/* List */
+.movies-found {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.grayc {
+	color: #bbb;
+}
