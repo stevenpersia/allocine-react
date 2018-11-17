@@ -9,7 +9,7 @@ Used The Movie Database API : themoviedb.org
 ---
 
 ## Demo
-Check demo : https://confident-wiles-803463.netlify.com/
+<a href="https://confident-wiles-803463.netlify.com/" target="_blank">See demo !</a>
 
 ---
 
