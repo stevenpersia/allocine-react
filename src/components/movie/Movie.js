@@ -19,7 +19,8 @@ class Movie extends Component {
 		for (let i = 0; i < this.state.casting.length; i++) {
 			actors.push(
 				<Actor
-					key={this.state.casting[i]}
+					key={this.state.casting[i].id}
+					id={this.state.casting[i].id}
 					img={`https://image.tmdb.org/t/p/w138_and_h175_face/${
 						this.state.casting[i].profile_path
 					}`}
