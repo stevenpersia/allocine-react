@@ -8,7 +8,7 @@ import LogoHome from './logo-reactocine.png';
 class Home extends Component {
 	state = {
 		search: '',
-		upcoming: [],
+		nowPlaying: [],
 		topRated: []
 	};
 
@@ -23,15 +23,15 @@ class Home extends Component {
 	};
 
 	render() {
-		/* Upcoming */
-		const upcomingMovies = [];
-		for (let i = 0; i < this.state.upcoming.length; i++) {
-			upcomingMovies.push(
+		/* Now Playing */
+		const nowPlayingMovies = [];
+		for (let i = 0; i < this.state.nowPlaying.length; i++) {
+			nowPlayingMovies.push(
 				<MovieCard
-					key={this.state.upcoming[i].id}
-					id={this.state.upcoming[i].id}
-					title={this.state.upcoming[i].title}
-					poster={this.state.upcoming[i].poster_path}
+					key={this.state.nowPlaying[i].id}
+					id={this.state.nowPlaying[i].id}
+					title={this.state.nowPlaying[i].title}
+					poster={this.state.nowPlaying[i].poster_path}
 				/>
 			);
 		}
@@ -81,8 +81,8 @@ class Home extends Component {
 					</form>
 				</div>
 				<div className="container">
-					<h2>Films récents</h2>
-					<div className="upcoming">{upcomingMovies.slice(0, 10)}</div>
+					<h2>En salle de cinéma</h2>
+					<div className="upcoming">{nowPlayingMovies.slice(0, 10)}</div>
 
 					<h2>Films populaires</h2>
 					<div className="top-rated">{topRatedMovies.slice(0, 10)}</div>
@@ -91,23 +91,21 @@ class Home extends Component {
 		);
 	}
 	componentDidMount() {
-		/* Upcoming */
+		/* Now playing */
 		axios
 			.get(
-				`https://api.themoviedb.org/3/movie/upcoming?api_key=4d12b2b226af3e650897e7b25db29466&language=fr-FR&page=1
-				`
+				`https://api.themoviedb.org/3/movie/now_playing?api_key=4d12b2b226af3e650897e7b25db29466&language=fr-FR&page=1`
 			)
 			.then(response => {
 				this.setState({
-					upcoming: response.data.results
+					nowPlaying: response.data.results
 				});
 			});
 
 		/* Top rated */
 		axios
 			.get(
-				`https://api.themoviedb.org/3/movie/popular?api_key=4d12b2b226af3e650897e7b25db29466&language=fr-FR&page=1
-				`
+				`https://api.themoviedb.org/3/movie/popular?api_key=4d12b2b226af3e650897e7b25db29466&language=fr-FR&page=1`
 			)
 			.then(response => {
 				this.setState({

@@ -1,0 +1,32 @@
+.img-actor {
+	width: 120px;
+	height: 120px;
+	overflow: hidden;
+	border-radius: 50%;
+	border: 8px #333 solid;
+	margin: 0 auto;
+}
+
+.img-actor img {
+	width: 120px;
+}
+
+.actor {
+	flex-direction: column;
+	text-align: center;
+	margin-top: 40px;
+}
+
+.actor .content {
+	padding: 0;
+	margin: 10px;
+}
+
+.actor p {
+	margin: 5px;
+	text-align: center;
+}
+
+.actor h2 {
+	padding: 10px 0 15px 0;
+}

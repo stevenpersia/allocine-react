@@ -272,4 +272,14 @@ input {
 	.content {
 		padding: 30px 0 0 0;
 	}
+
+	.content li span {
+		display: block;
+	}
+
+	.content p,
+	#casting h2,
+	#similar h2 {
+		text-align: center;
+	}
 }

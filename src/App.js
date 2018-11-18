@@ -4,7 +4,7 @@ import { BrowserRouter as Router, Route } from 'react-router-dom';
 import Home from './components/home/Home';
 import SearchMovies from './components/search/SearchMovies';
 import Movie from './components/movie/Movie';
-import SearchActorMovies from './components/search/SearchActorMovies';
+import ActorMovies from './components/search/ActorMovies';
 
 class App extends React.Component {
 	state = {};
@@ -16,10 +16,14 @@ class App extends React.Component {
 					<Route exact path="/" component={Home} />
 					<Route path="/search" component={SearchMovies} />
 					<Route path="/movie?:movie" component={Movie} />
-					<Route path="/actor?:actor" component={SearchActorMovies} />
+					<Route path="/actor?:actor" component={ActorMovies} />
 					<div className="footer">
 						Made by{' '}
-						<a href="https://github.com/stevenpersia" target="_blank">
+						<a
+							href="https://github.com/stevenpersia"
+							target="_blank"
+							rel="noopener noreferrer"
+						>
 							Steven Persia
 						</a>
 					</div>
