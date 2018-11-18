@@ -6,6 +6,15 @@
 	flex-wrap: wrap;
 }
 
+.upcoming a,
+.top-rated a {
+	margin: 0 auto;
+}
+
+.top-rated {
+	margin-bottom: 50px;
+}
+
 .angled-hero-header {
 	background-color: #f5cd46;
 	position: absolute;
