@@ -57,15 +57,9 @@ class Movie extends Component {
 					<h1>{this.state.movie.title}</h1>
 					<div className="menu">
 						<ul>
-							<a href="#/">
-								<MovieTab icon="" text="Fiche" selected="selected" />
-							</a>
-							<a href="#casting">
-								<MovieTab icon="" text="Casting" />
-							</a>
-							<a href="#similar">
-								<MovieTab icon="" text="Films similaires" />
-							</a>
+							<MovieTab icon="" text="Fiche" selected="selected" />
+							<MovieTab icon="" text="Casting" />
+							<MovieTab icon="" text="Films similaires" />
 						</ul>
 					</div>
 					<div className="flex-container">
