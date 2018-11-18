@@ -3,13 +3,13 @@
 ![alt text](https://forthebadge.com/images/badges/60-percent-of-the-time-works-every-time.svg "60% of the time works every time")
 ![alt text](https://forthebadge.com/images/badges/built-with-love.svg "Built with love")
 
-A little clone of Allociné. All rights reserved to Allociné & Webedia.
+A little clone of Allociné made with React. All rights reserved to Allociné & Webedia.
 Used The Movie Database API : themoviedb.org
 
 ---
 
 ## Demo
-Check demo : https://allocine-steven.herokuapp.com/
+See demo : https://confident-wiles-803463.netlify.com/
 
 ---
 
