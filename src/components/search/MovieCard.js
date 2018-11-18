@@ -8,7 +8,7 @@ class MovieCard extends Component {
 		return (
 			<Link
 				to={{
-					pathname: '/movie',
+					pathname: `/movie?${this.props.title}`,
 					movieId: this.props.id
 				}}
 			>

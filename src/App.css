@@ -137,11 +137,10 @@ header h1 {
 }
 
 .btn {
-	border-radius: 3px;
+	border-radius: 0 3px 3px 0;
 	text-decoration: none;
 	color: #fff;
 	font-weight: 600;
-	margin: 5px;
 	font-size: 13px;
 	background: #2b2b2b;
 	padding: 18px;
@@ -241,7 +240,7 @@ input {
 	border: 1px solid #fafafa;
 	height: 30px;
 	width: 200px;
-	border-radius: 2px;
+	border-radius: 3px 0 0 3px;
 	padding: 10px;
 	font-size: 14px;
 }

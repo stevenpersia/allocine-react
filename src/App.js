@@ -14,7 +14,7 @@ class App extends React.Component {
 				<div>
 					<Route exact path="/" component={Home} />
 					<Route path="/search" component={SearchMovies} />
-					<Route path="/movie" component={Movie} />
+					<Route path="/movie?:movie" component={Movie} />
 					<div className="footer">
 						Made by{' '}
 						<a href="https://github.com/stevenpersia" target="_blank">

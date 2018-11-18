@@ -91,11 +91,6 @@ class Movie extends Component {
 								<h3>Synopsis et détails</h3>
 								<p>{this.state.movie.overview}</p>
 							</div>
-							{/* <div className="group-btn">
-								<Button text="Bande-annonce" theme="black" />
-								<Button text="Séances (2)" theme="yellow" />
-								<Button text="Ce film en VOD" theme="gray" />
-							</div> */}
 						</div>
 					</div>
 
