@@ -25,7 +25,10 @@ class SearchActorMovies extends Component {
 				<div className="angled-hero-header" />
 				<h2>
 					Recherche de : {this.props.location.actorName}
-					<span className="grayc">({moviesOfActorFound.length} résultats)</span>
+					<span className="grayc">
+						{' '}
+						({moviesOfActorFound.length} résultats)
+					</span>
 				</h2>
 				<div className="movies-found">{moviesOfActorFound}</div>
 			</div>
