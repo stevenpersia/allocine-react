@@ -66,9 +66,7 @@ class ActorMovies extends Component {
 		/* Get movies of actor */
 		axios
 			.get(
-				`https://api.themoviedb.org/3/person/${actorId}/movie_credits?api_key=${
-					process.env.API_TMDB
-				}&language=fr-FR`
+				`https://api.themoviedb.org/3/person/${actorId}/movie_credits?api_key=4d12b2b226af3e650897e7b25db29466&language=fr-FR`
 			)
 			.then(response => {
 				this.setState({
@@ -79,9 +77,7 @@ class ActorMovies extends Component {
 		/* Get details of actor */
 		axios
 			.get(
-				`https://api.themoviedb.org/3/person/${actorId}?api_key=${
-					process.env.API_TMDB
-				}&language=fr-FR`
+				`https://api.themoviedb.org/3/person/${actorId}?api_key=4d12b2b226af3e650897e7b25db29466&language=fr-FR`
 			)
 			.then(response => {
 				this.setState({

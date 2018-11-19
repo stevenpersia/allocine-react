@@ -38,9 +38,9 @@ class SearchMovies extends Component {
 	componentDidMount() {
 		axios
 			.get(
-				`https://api.themoviedb.org/3/search/movie?api_key=${
-					process.env.API_TMDB
-				}&language=fr-FR&query=${this.props.location.search}&page=1`
+				`https://api.themoviedb.org/3/search/movie?api_key=4d12b2b226af3e650897e7b25db29466&language=fr-FR&query=${
+					this.props.location.search
+				}&page=1`
 			)
 			.then(response => {
 				this.setState({
