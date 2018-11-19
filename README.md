@@ -9,7 +9,7 @@ Used The Movie Database API : themoviedb.org
 ---
 
 ## Demo
-See demo : https://confident-wiles-803463.netlify.com/
+See demo : https://allocine-react.netlify.com/
 
 ---
 
