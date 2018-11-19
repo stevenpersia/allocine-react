@@ -108,7 +108,7 @@ class Movie extends Component {
 			.get(
 				`https://api.themoviedb.org/3/movie/${
 					this.props.location.movieId
-				}?api_key=4d12b2b226af3e650897e7b25db29466&language=fr-FR`
+				}?api_key=${process.env.API_TMDB}&language=fr-FR`
 			)
 			.then(response => {
 				this.setState({
@@ -121,7 +121,7 @@ class Movie extends Component {
 			.get(
 				`https://api.themoviedb.org/3/movie/${
 					this.props.location.movieId
-				}/credits?api_key=4d12b2b226af3e650897e7b25db29466`
+				}/credits?api_key=${process.env.API_TMDB}`
 			)
 			.then(response => {
 				this.setState({
@@ -134,7 +134,7 @@ class Movie extends Component {
 			.get(
 				`https://api.themoviedb.org/3/movie/${
 					this.props.location.movieId
-				}/similar?api_key=4d12b2b226af3e650897e7b25db29466&language=fr-FR&page=1`
+				}/similar?api_key=${process.env.API_TMDB}&language=fr-FR&page=1`
 			)
 			.then(response => {
 				this.setState({

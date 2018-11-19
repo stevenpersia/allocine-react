@@ -94,7 +94,9 @@ class Home extends Component {
 		/* Now playing */
 		axios
 			.get(
-				`https://api.themoviedb.org/3/movie/now_playing?api_key=4d12b2b226af3e650897e7b25db29466&language=fr-FR&page=1`
+				`https://api.themoviedb.org/3/movie/now_playing?api_key=${
+					process.env.API_TMDB
+				}&language=fr-FR&page=1`
 			)
 			.then(response => {
 				this.setState({
@@ -105,7 +107,9 @@ class Home extends Component {
 		/* Top rated */
 		axios
 			.get(
-				`https://api.themoviedb.org/3/movie/popular?api_key=4d12b2b226af3e650897e7b25db29466&language=fr-FR&page=1`
+				`https://api.themoviedb.org/3/movie/popular?api_key=${
+					process.env.API_TMDB
+				}&language=fr-FR&page=1`
 			)
 			.then(response => {
 				this.setState({
