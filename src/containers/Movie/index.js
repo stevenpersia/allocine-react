@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
 import axios from 'axios';
-import MovieTab from '../MovieTab';
-import Actor from '../Actor';
-import MovieCard from '../search/MovieCard';
-import Header from '../Header';
-import Empty from '../empty.jpg';
+import MovieTab from '../../components/MovieTab';
+import ActorCard from '../../components/ActorCard';
+import MovieCard from '../../components/MovieCard';
+import Header from '../../components/Header';
+import './styles.css';
+import Empty from '../../assets/img/empty.jpg';
 
 class Movie extends Component {
 	state = {
@@ -18,7 +19,7 @@ class Movie extends Component {
 		const actors = [];
 		for (let i = 0; i < this.state.casting.length; i++) {
 			actors.push(
-				<Actor
+				<ActorCard
 					key={this.state.casting[i].id}
 					id={this.state.casting[i].id}
 					img={`https://image.tmdb.org/t/p/w138_and_h175_face/${

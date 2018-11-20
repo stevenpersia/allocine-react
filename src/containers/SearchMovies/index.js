@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import axios from 'axios';
-import MovieCard from './MovieCard';
-import Header from '../Header';
-import './Search.css';
+import MovieCard from '../../components/MovieCard';
+import Header from '../../components/Header';
+import './styles.css';
 
 class SearchMovies extends Component {
 	state = {

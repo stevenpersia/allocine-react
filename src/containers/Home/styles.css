@@ -12,7 +12,7 @@
 }
 
 .top-rated {
-	margin-bottom: 50px;
+	padding-bottom: 50px;
 }
 
 .angled-hero-header {
@@ -25,8 +25,9 @@
 	transform: skewY(-6deg);
 	transform-origin: 50%;
 	z-index: -1;
-	bottom: 400px;
+	bottom: 300px;
 }
+
 .form {
 	max-width: 1024px;
 	margin: 0 auto;
@@ -49,4 +50,18 @@
 
 .search {
 	margin-top: 10px;
+}
+
+.btn {
+	border-radius: 0 3px 3px 0;
+	text-decoration: none;
+	color: #fff;
+	font-weight: 600;
+	font-size: 13px;
+	background: #2b2b2b;
+	padding: 18px;
+}
+
+.btn:hover {
+	opacity: 0.9;
 }

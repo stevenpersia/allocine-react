@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import Empty from './empty.jpg';
+import './styles.css';
+import Empty from '../../assets/img/empty.jpg';
 
 class Actor extends React.Component {
 	render() {

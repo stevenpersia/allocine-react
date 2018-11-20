@@ -1,0 +1,26 @@
+/* MOVIE TAB */
+.menu {
+	margin: 0 auto 50px;
+	text-align: center;
+}
+
+.menu a,
+.menu a:visited {
+	color: #000;
+}
+
+.menu li {
+	display: inline;
+	padding: 15px 20px;
+	border-bottom: 1px solid #f0f0f0;
+	font-weight: 600;
+}
+
+.menu li:hover {
+	cursor: pointer;
+	background-color: #f0f0f0;
+}
+
+.menu .selected {
+	border-bottom: 3px solid #fccc02;
+}

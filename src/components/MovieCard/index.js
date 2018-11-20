@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import Empty from '../empty.jpg';
-import './MovieCard.css';
+import Empty from '../../assets/img/empty.jpg';
+import './styles.css';
 
 class MovieCard extends Component {
 	render() {

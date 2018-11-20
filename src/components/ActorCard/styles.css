@@ -1,0 +1,30 @@
+/* ACTOR CARD */
+.cardActor:hover {
+	opacity: 0.8;
+	cursor: pointer;
+}
+.cardActor {
+	display: inline-block;
+	margin: 10px 3px;
+}
+
+.cardActor img {
+	border-radius: 3px;
+	width: 138px;
+	height: 175px;
+}
+
+.cardActor span {
+	color: #bbb;
+}
+
+.cardActor p,
+.cardActor {
+	text-align: center;
+	font-weight: 700;
+	width: 138px;
+}
+
+.cardActor p {
+	margin: 5px 0;
+}

@@ -1,0 +1,30 @@
+/* BUTTON */
+.group-btn {
+	padding: 30px 0;
+}
+
+.btn {
+	border-radius: 0 3px 3px 0;
+	text-decoration: none;
+	color: #fff;
+	font-weight: 600;
+	font-size: 13px;
+	background: #2b2b2b;
+	padding: 18px;
+}
+
+.btn:hover {
+	opacity: 0.9;
+}
+
+.black {
+	background-color: #2b2b2b;
+}
+
+.yellow {
+	background-color: #fccc02;
+}
+
+.gray {
+	background-color: #ebeff0;
+}

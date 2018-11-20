@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import axios from 'axios';
-import MovieCard from './MovieCard';
-import Header from '../Header';
-import Empty from '../empty.jpg';
-import './ActorMovies.css';
+import MovieCard from '../../components/MovieCard';
+import Header from '../../components/Header';
+import Empty from '../../assets/img/empty.jpg';
+import './styles.css';
 
 class ActorMovies extends Component {
 	state = {

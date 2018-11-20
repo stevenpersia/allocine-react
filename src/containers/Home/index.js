@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
-import axios from 'axios';
 import { Link } from 'react-router-dom';
-import MovieCard from '../search/MovieCard';
-import './Home.css';
-import LogoHome from './logo-reactocine.png';
+import axios from 'axios';
+import MovieCard from '../../components/MovieCard';
+import LogoHome from '../../assets/img/logo-reactocine.png';
+import './styles.css';
 
 class Home extends Component {
 	state = {

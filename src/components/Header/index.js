@@ -1,8 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-
-import Logo from './Logo';
-import LogoImg from '../components/home/logo-reactocine.png';
+import './styles.css';
+import Logo from '../Logo';
+import LogoImg from '../../assets/img/logo-reactocine.png';
 
 class Header extends React.Component {
 	render() {

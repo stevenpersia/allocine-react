@@ -1,0 +1,33 @@
+/* MOVIE */
+.cards {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+.section {
+	margin: 50px 0;
+}
+
+.section h2 {
+	text-align: left;
+	padding: 20px 0;
+}
+
+.affiche {
+	height: 280px;
+	border-radius: 3px;
+}
+
+.content {
+	padding-left: 20px;
+}
+
+.content li {
+	list-style: none;
+	padding-bottom: 8px;
+}
+
+.content li span {
+	color: #bbb;
+}
