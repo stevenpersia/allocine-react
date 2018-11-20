@@ -13,7 +13,7 @@ class Actor extends React.Component {
 					actorName: this.props.name
 				}}
 			>
-				<div className="cardActor">
+				<div className="card-actor">
 					<img
 						onError={e => {
 							e.target.src = Empty;
