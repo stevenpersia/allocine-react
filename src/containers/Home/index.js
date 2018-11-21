@@ -1,25 +1,12 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
 import axios from 'axios';
 import MovieCard from '../../components/MovieCard';
-import LogoHome from '../../assets/img/logo-reactocine.png';
 import './styles.css';
 
 class Home extends Component {
 	state = {
-		search: '',
 		nowPlaying: [],
 		topRated: []
-	};
-
-	handleInputChange = event => {
-		const target = event.target;
-		const value = target.type === 'checkbox' ? target.checked : target.value;
-		const name = target.name;
-
-		this.setState({
-			[name]: value
-		});
 	};
 
 	render() {
@@ -52,30 +39,6 @@ class Home extends Component {
 		return (
 			<div>
 				<div className="angled-hero-header" />
-				<div className="form">
-					<img src={LogoHome} alt="Reactociné" />
-					<h1>Reactociné</h1>
-					<form>
-						<div className="search">
-							<input
-								name="search"
-								type="text"
-								value={this.state.search}
-								onChange={this.handleInputChange}
-								placeholder="Recherche un film"
-							/>
-							<Link
-								to={{
-									pathname: '/search',
-									search: this.state.search
-								}}
-								className="btn"
-							>
-								GO
-							</Link>
-						</div>
-					</form>
-				</div>
 				<div className="container">
 					<h2>En salle de cinéma</h2>
 					<div className="upcoming">{nowPlayingMovies.slice(0, 10)}</div>

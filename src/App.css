@@ -92,3 +92,9 @@ input:focus {
 		text-align: center;
 	}
 }
+
+@media (max-width: 435px) {
+	.menu {
+		display: none;
+	}
+}

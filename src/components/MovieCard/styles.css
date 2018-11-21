@@ -1,6 +1,7 @@
 /* MOVIE CARD */
 .movie-card {
 	margin: 5px;
+	cursor: pointer;
 }
 
 .movie-card img {

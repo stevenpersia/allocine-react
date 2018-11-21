@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 import MovieCard from '../../components/MovieCard';
-import Header from '../../components/Header';
 import './styles.css';
 
 class SearchMovies extends Component {
@@ -23,7 +22,6 @@ class SearchMovies extends Component {
 		}
 		return (
 			<div className="container">
-				<Header />
 				<div className="angled-hero-header" />
 				<h2>
 					Recherche de :{' '}

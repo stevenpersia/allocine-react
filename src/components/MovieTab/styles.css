@@ -24,3 +24,7 @@
 .menu .selected {
 	border-bottom: 3px solid #fccc02;
 }
+
+.menu i {
+	padding-right: 5px;
+}

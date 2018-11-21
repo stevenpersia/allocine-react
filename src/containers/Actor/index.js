@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 import MovieCard from '../../components/MovieCard';
-import Header from '../../components/Header';
 import Empty from '../../assets/img/empty.jpg';
 import './styles.css';
 
@@ -25,7 +24,6 @@ class ActorMovies extends Component {
 
 		return (
 			<div className="container">
-				<Header />
 				<div className="angled-hero-header" />
 				<div className="flex-container actor">
 					<div className="img-actor">
@@ -61,7 +59,7 @@ class ActorMovies extends Component {
 	}
 
 	componentDidMount() {
-		let actorId = this.props.location.actorId;
+		let actorId = this.props.match.params.actor;
 
 		/* Get movies of actor */
 		axios

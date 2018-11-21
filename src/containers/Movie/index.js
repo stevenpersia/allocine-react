@@ -3,7 +3,6 @@ import axios from 'axios';
 import MovieTab from '../../components/MovieTab';
 import ActorCard from '../../components/ActorCard';
 import MovieCard from '../../components/MovieCard';
-import Header from '../../components/Header';
 import './styles.css';
 import Empty from '../../assets/img/empty.jpg';
 
@@ -49,18 +48,17 @@ class Movie extends Component {
 				/>
 			);
 		}
-
+		console.log(this.state.movie);
 		return (
 			<main>
 				<div className="container">
-					<Header />
 					<div className="angled-hero-header" />
 					<h1>{this.state.movie.title}</h1>
 					<div className="menu">
 						<ul>
-							<MovieTab icon="" text="Fiche" selected="selected" />
-							<MovieTab icon="" text="Casting" />
-							<MovieTab icon="" text="Films similaires" />
+							<MovieTab icon="film" text="Fiche" selected="selected" link="#" />
+							<MovieTab icon="users" text="Casting" link="#casting" />
+							<MovieTab icon="video" text="Films similaires" link="#similar" />
 						</ul>
 					</div>
 					<div className="flex-container">
@@ -104,44 +102,33 @@ class Movie extends Component {
 		);
 	}
 	componentDidMount() {
-		/* Movie details */
 		axios
-			.get(
-				`https://api.themoviedb.org/3/movie/${
-					this.props.location.movieId
-				}?api_key=4d12b2b226af3e650897e7b25db29466&language=fr-FR`
-			)
-			.then(response => {
-				this.setState({
-					movie: response.data
-				});
-			});
-
-		/* Casting */
-		axios
-			.get(
-				`https://api.themoviedb.org/3/movie/${
-					this.props.location.movieId
-				}/credits?api_key=4d12b2b226af3e650897e7b25db29466`
-			)
-			.then(response => {
-				this.setState({
-					casting: response.data.cast
-				});
-			});
-
-		/* Similar movies */
-		axios
-			.get(
-				`https://api.themoviedb.org/3/movie/${
-					this.props.location.movieId
-				}/similar?api_key=4d12b2b226af3e650897e7b25db29466&language=fr-FR&page=1`
-			)
-			.then(response => {
-				this.setState({
-					similar: response.data.results
-				});
-			});
+			.all([
+				axios.get(
+					`https://api.themoviedb.org/3/movie/${
+						this.props.match.params.movie
+					}?api_key=4d12b2b226af3e650897e7b25db29466&language=fr-FR`
+				),
+				axios.get(
+					`https://api.themoviedb.org/3/movie/${
+						this.props.match.params.movie
+					}/credits?api_key=4d12b2b226af3e650897e7b25db29466`
+				),
+				axios.get(
+					`https://api.themoviedb.org/3/movie/${
+						this.props.match.params.movie
+					}/similar?api_key=4d12b2b226af3e650897e7b25db29466&language=fr-FR&page=1`
+				)
+			])
+			.then(
+				axios.spread((detailsRes, castingRes, similarRes) => {
+					this.setState({
+						movie: detailsRes.data,
+						casting: castingRes.data.cast,
+						similar: similarRes.data.results
+					});
+				})
+			);
 	}
 }
 

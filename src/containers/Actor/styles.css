@@ -14,7 +14,7 @@
 .actor {
 	flex-direction: column;
 	text-align: center;
-	margin-top: 40px;
+	padding-top: 40px;
 }
 
 .actor .content {
