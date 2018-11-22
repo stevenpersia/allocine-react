@@ -38,12 +38,11 @@
 
 @media (max-width: 450px) {
 	.movie-card img {
-		width: 140px;
-		height: 210px;
+		width: 120px;
+		height: 180px;
 	}
 
 	.movie-card .movie-content {
-		margin-top: -100px;
-		margin-left: 69px;
+		display: none;
 	}
 }
