@@ -6,7 +6,7 @@ class MovieTab extends React.Component {
 		return (
 			<a href={this.props.link}>
 				<li className={this.props.selected}>
-					<i class={'fas fa-' + this.props.icon} />
+					<i className={'fas fa-' + this.props.icon} />
 					{this.props.text}
 				</li>
 			</a>

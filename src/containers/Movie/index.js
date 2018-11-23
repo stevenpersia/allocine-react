@@ -48,7 +48,6 @@ class Movie extends Component {
 				/>
 			);
 		}
-		console.log(this.state.movie);
 		return (
 			<main>
 				<div className="container">

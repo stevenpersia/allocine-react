@@ -1,4 +1,4 @@
-import React, { Component, Fragment } from 'react';
+import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import './styles.css';
 
@@ -27,7 +27,7 @@ class SearchForm extends Component {
 						type="text"
 						value={this.state.search}
 						onChange={this.handleInputChange}
-						placeholder="Recherche un film"
+						placeholder="Rechercher un film"
 					/>
 					<Link
 						to={{

@@ -6,7 +6,11 @@ class Footer extends Component {
 		return (
 			<div className="footer">
 				Made by
-				<a href="https://github.com/stevenpersia" target="_blank">
+				<a
+					href="https://github.com/stevenpersia"
+					target="_blank"
+					rel="noopener noreferrer"
+				>
 					{' '}
 					Steven Persia
 				</a>

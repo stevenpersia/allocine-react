@@ -2,7 +2,6 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import './styles.css';
 import SearchForm from '../../components/SearchForm';
-import Logo from '../Logo';
 import LogoImg from '../../assets/img/logo-reactocine.png';
 
 class Header extends React.Component {
