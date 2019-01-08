@@ -3,7 +3,7 @@
 ![](https://img.shields.io/snyk/vulnerabilities/github/stevenpersia/allocine-react.svg?style=for-the-badge)
 ![](https://img.shields.io/codeclimate/maintainability/stevenpersia/allocine-react.svg?style=for-the-badge)
 ![](https://img.shields.io/github/license/stevenpersia/allocine-react.svg?style=for-the-badge)
-![](https://img.shields.io/badge/You%20like%20this%20repo%20%3F-star%20me-blue.svg?style=for-the-badge)
+![](https://img.shields.io/badge/You%20like%20%3F-star%20me-blue.svg?style=for-the-badge)
 
 A little clone of Allociné made with React. All rights reserved to Allociné & Webedia.
 Used The Movie Database API : themoviedb.org
