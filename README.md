@@ -1,5 +1,3 @@
-<img src="https://github.com/stevenpersia/allocine-react/blob/master/src/assets/img/reactocine-logo.png" width="100" height="100">
-
 # Allociné Clone
 
 ![](https://img.shields.io/github/last-commit/stevenpersia/allocine-react.svg?style=for-the-badge)
