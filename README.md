@@ -8,9 +8,10 @@
 
 A little clone of Allociné made with React. All rights reserved to Allociné & Webedia. For content, I used The Movie Database API : themoviedb.org.
 
-![](https://github.com/stevenpersia/allocine-react/blob/master/src/assets/img/preview-reactocine.png)
+[![](https://github.com/stevenpersia/allocine-react/blob/master/src/assets/img/preview-reactocine.png)](https://allocine-react.netlify.com/)
 
 ---
 
 ## Demo
+
 See demo : https://allocine-react.netlify.com/
